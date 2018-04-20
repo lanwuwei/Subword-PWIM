@@ -2,7 +2,7 @@
 This repository contains code and data used in the following paper:
 
 	@inproceedings{lan2018subword,
-	  author     = {Lan, Wuwei and Xu, Wei},
+	author     = {Lan, Wuwei and Xu, Wei},
   	title      = {Character-based Neural Networks for Sentence Pair Modeling},
   	booktitle  = {Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL)},
   	year       = {2018}
