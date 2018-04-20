@@ -1,4 +1,4 @@
-## Paraphrase-dataset
+## Subword-PWIM
 This repository contains code and data used in the following paper:
 
 	@inproceedings{lan2018subword,
