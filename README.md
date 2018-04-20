@@ -1,5 +1,5 @@
 ## Subword-PWIM
-This repository contains code and data used in the following paper:
+This repository contains code and data used in the following [paper](https://cocoxu.github.io/publications/Wuwei_NAACL_2018.pdf):
 
 	@inproceedings{lan2018subword,
 	 author     = {Lan, Wuwei and Xu, Wei},
