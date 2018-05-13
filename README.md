@@ -19,5 +19,5 @@ The original PWIM is from this [paper](http://www.aclweb.org/anthology/N16-1108)
 ## A few notes
 1. This repositiory only contains MSRP dataset, here is [Twitter-URL](https://github.com/lanwuwei/language-net) here and [PIT-2015](https://github.com/cocoxu/SemEval-PIT2015).
 2. We follow this [code](https://github.com/stanfordnlp/treelstm/blob/master/scripts/preprocess-sick.py) to do data preprocessing.
-3. The model was implemented with PyTorch 0.4.0 .
+3. The model was implemented with PyTorch 0.4.0 and Torchtext 0.1.1 .
 4. Sample command to run: python main.py, you can check main.py to add more arguments.
