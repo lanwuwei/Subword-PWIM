@@ -433,9 +433,9 @@ class DeepPairWiseWord(nn.Module):
 		update_oov_mode=self.word_mode[2]
 		if glove_mode==True and update_inv_mode==False and update_oov_mode==False:
 			try:
-				sentA = torch.cat((self.dict[word].view(1, self.embedding_dim) for word in lsents), 0)
+				sentA = torch.cat([self.dict[word].view(1, self.embedding_dim) for word in lsents], 0)
 				sentA = Variable(sentA)  # .cuda()
-				sentB = torch.cat((self.dict[word].view(1, self.embedding_dim) for word in rsents), 0)
+				sentB = torch.cat([self.dict[word].view(1, self.embedding_dim) for word in rsents], 0)
 				sentB = Variable(sentB)  # .cuda()
 			except:
 				print(lsents)
