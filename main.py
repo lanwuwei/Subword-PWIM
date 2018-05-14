@@ -80,9 +80,25 @@ def main(args):
 		character_ngrams = args.char_ngram
 		character_ngrams_overlap = False
 
-		tokens = []
-		for line in open(basepath + '/data/' + task + '/vocab.txt'):
-			tokens.append(line.strip())
+		#tokens = []
+		#for line in open(basepath + '/data/' + task + '/vocab.txt'):
+		#	tokens.append(line.strip())
+		tokens=set()
+		lsents, rsents, labels = trainset
+		for sent in lsents:
+			for word in sent:
+				tokens.add(word)
+		for sent in rsents:
+			for word in sent:
+				tokens.add(word)
+		lsents, rsents, labels = testset
+		for sent in lsents:
+			for word in sent:
+				tokens.add(word)
+		for sent in rsents:
+			for word in sent:
+				tokens.add(word)
+		tokens=list(tokens)
 		org_tokens = tokens[:]
 		tokens.append('<s>')
 		tokens.append('</s>')
@@ -197,8 +213,24 @@ def main(args):
 		update_oov_mode = False
 		word_mode = (glove_mode, update_inv_mode, update_oov_mode)
 		if task == 'msrp':
-			for line in open(basepath + '/data/' + task + '/vocab.txt'):
-				tokens.append(line.strip())
+			#for line in open(basepath + '/data/' + task + '/vocab.txt'):
+			#	tokens.append(line.strip())
+			tokens=set()
+			lsents, rsents, labels = trainset
+			for sent in lsents:
+				for word in sent:
+					tokens.add(word)
+			for sent in rsents:
+				for word in sent:
+					tokens.add(word)
+			lsents, rsents, labels = testset
+			for sent in lsents:
+				for word in sent:
+					tokens.add(word)
+			for sent in rsents:
+				for word in sent:
+					tokens.add(word)
+			tokens=list(tokens)
 			tokens.append('oov')
 			dict = {}
 			EMBEDDING_DIM = 300
