@@ -21,5 +21,6 @@ The original PWIM is from this [paper](http://www.aclweb.org/anthology/N16-1108)
 2. We follow this [code](https://github.com/stanfordnlp/treelstm/blob/master/scripts/preprocess-sick.py) to do data preprocessing.
 3. The model was implemented with PyTorch 0.4.0 and Torchtext 0.1.1 .
 4. Sample command to run: python main.py, you can check main.py to add more arguments.
-5. There is a demo you try (download [save_dir](https://drive.google.com/drive/folders/1h4uW-kho6dmnuPc5xYdf059FiNw0TRES?usp=sharing) first): 
+5. There is a demo you try (download [save_dir](https://drive.google.com/drive/folders/1h4uW-kho6dmnuPc5xYdf059FiNw0TRES?usp=sharing), which contains model trained on Twitter-URL with unigram CNN): 
+
    python -W ignore demo.py 'do you know where my book is' 'i cannot find my book, do you know where is it'
